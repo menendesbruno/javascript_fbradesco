@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Coloca dois numeros em ordem crescente</title>
+    </head>
+    <body>
+        <h3>Programa para colocar em ordem cescentes dois números</h3>
+        <form name="MeuFormulario" action=" " method="POST">
+            Entre com o primeiro número: <input type="text" name="f_n1"><p></p>
+            Entre com o seguendo número <input type="text" name="f_n2"><p></p>
+            <input type="button" name="btn_ordenar" value="Ordenar" onclick="ordenar()">
+            <input type="reset" name="btn_reset" value="Apagar">
+
+        </form>
+        <script>
+            var js_n1;
+            var js_n2;
+            var js_n3;
+            function ordenar() {
+                js_n1 = parseInt(document.MeuFormulario.f_n1.value);
+                js_n2 = parseInt(document.MeuFormulario.f_n2.value);
+                if (js_n1 > js_n2) {
+                    js_n3 = js_n1
+                    js_n1 = js_n2
+                    js_n2 = js_n3
+                }
+                window.alert('Números em ordem crescente = ' + js_n1 +' e ' + js_n2);
+
+            } 
+
+            
+        </script>
+    </body>
+</html>
