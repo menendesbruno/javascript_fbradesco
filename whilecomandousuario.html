@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>While comandado pelo usuario </title>
+    </head>
+    <body>
+        
+        <script>
+            var js_contador = 1;
+            var js_resposta = true;
+            do {
+                document.write('<p>'+js_contador+'ª; Repetição de uma única linha de comando dentro de um laço condicional: ');
+                js_contador += 1;
+                js_resposta = window.confirm('Deseja Continuar ?');
+            }
+            while (js_resposta == true);
+        </script>
+    </body>
+</html>
